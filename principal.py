@@ -14,7 +14,7 @@ nomes = [] #lista para guardar os nomes
 resposta = ''
 while resposta != 'SAIR':
   #resposta = input('Digite o nome: ').upper()
-  st.text_input('Digite o nome: ',key=resposta)
+  resposta = st.text_input('Digite o nome: ')
   nomes.append(resposta)#colocou em ultimo
   ordena(nomes)
   st.write(nomes)
