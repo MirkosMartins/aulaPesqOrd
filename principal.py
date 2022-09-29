@@ -1,3 +1,7 @@
+import streamlit as st
+
+st.title('Ordenador de nomes.')
+
 def ordena(lista):
   t = len(lista)
   i=0
@@ -13,7 +17,8 @@ def ordena(lista):
 nomes = [] #lista para guardar os nomes
 resposta = ''
 while resposta != 'SAIR':
-  resposta = input('Digite o nome: ').upper()
+  #resposta = input('Digite o nome: ').upper()
+  st.text_input('Digite o nome: ').upper()
   nomes.append(resposta)#colocou em ultimo
   ordena(nomes)
   print(nomes)
