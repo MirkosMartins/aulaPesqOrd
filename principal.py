@@ -17,7 +17,7 @@ while resposta != 'SAIR':
   st.text_input('Digite o nome: ').upper()
   nomes.append(resposta)#colocou em ultimo
   ordena(nomes)
-  print(nomes)
+  st.write(nomes)
 
 nomes.pop()#exclui o ultimo da lista - 'sair'
-print(nomes)
+st.write(nomes)
