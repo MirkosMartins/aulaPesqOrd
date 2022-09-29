@@ -1,3 +1,5 @@
+import streamlit as st
+
 def ordena(lista):
   t = len(lista)
   i=0
