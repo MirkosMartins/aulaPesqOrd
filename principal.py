@@ -1,3 +1,5 @@
+import streamlit as st
+
 def ordena(lista):
   t = len(lista)
   i=0
@@ -15,9 +17,10 @@ resposta = ''
 while resposta != 'SAIR':
   #resposta = input('Digite o nome: ').upper()
   resposta = st.text_input('Digite o nome: ')
-  nomes.append(resposta)#colocou em ultimo
+  if resposta != 'SAIR':
+    nomes.append(resposta)#colocou em ultimo
   ordena(nomes)
   st.write(nomes)
 
-nomes.pop()#exclui o ultimo da lista - 'sair'
+#nomes.pop()#exclui o ultimo da lista - 'sair'
 st.write(nomes)
