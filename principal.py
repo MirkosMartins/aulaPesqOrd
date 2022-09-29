@@ -1,7 +1,3 @@
-import streamlit as st
-
-st.title('Ordenador de nomes.')
-
 def ordena(lista):
   t = len(lista)
   i=0
